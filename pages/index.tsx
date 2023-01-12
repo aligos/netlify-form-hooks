@@ -4,7 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
   example: string;
-  exampleRequired: string;
+  example_required: string;
 };
 
 const encode = (data: Record<string, string>) => {
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       <input defaultValue="test" {...register("example")} />
 
       {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
+      <input {...register("example_required", { required: true })} />
       {/* errors will return when field validation fails  */}
       {errors.exampleRequired && <span>This field is required</span>}
 
