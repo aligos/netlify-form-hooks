@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       {/* include validation with required or other standard HTML validation rules */}
       <input {...register("example_required", { required: true })} />
       {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
+      {errors.example_required && <span>This field is required</span>}
 
       <input type="submit" />
     </form>
